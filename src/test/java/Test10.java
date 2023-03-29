@@ -1,4 +1,6 @@
-// PROGRAM 10 : Objective is to check whether its a secured URL or not. for this if the url starts with https its a secured else unsecured url
+// CORRECTION program
+
+PROGRAM 10 : Objective is to check whether its a secured URL or not. for this if the url starts with https its a secured else unsecured url
 // get current url gets the url of the webpage which is already opened.
 
 
@@ -19,9 +21,10 @@ public class Test10 {
 		
 		
 		driver.get("http://www.google.co.in"); // it will launch the page in the browser
-		Thread.sleep(5000);
-		String x = driver.getCurrentUrl();// get current url gets the url of the webpage which is already opened
 		
+		String x = driver.getCurrentUrl();// get current url gets the url of the webpage which is already opened
+		Thread.sleep(7000);
+		//corrected by Team lead - vas
 		if(x.startsWith("https"))
 		{
 		System.out.println("Secured site");
